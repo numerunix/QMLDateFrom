@@ -3,44 +3,45 @@
 # This file is distributed under the same license as the qmldatefrom.numerone package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: qmldatefrom.numerone\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-02 10:43+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2022-11-02 06:22+0000\n"
+"PO-Revision-Date: 2022-11-02 09:28+0100\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
 
 #: ../qml/Main.qml:41
 msgid "Insert the name: "
-msgstr ""
+msgstr "Geben Sie den Namen ein: "
 
 #: ../qml/Main.qml:51
 msgid "Insert the date"
-msgstr ""
+msgstr "Geben Sie das Datum ein"
 
 #: ../qml/Main.qml:59
 msgid "Calculate"
-msgstr ""
+msgstr "Berechnung"
 
 #: ../qml/Main.qml:65
 msgid " about "
-msgstr ""
+msgstr " vor ungefähr "
 
 #: ../qml/Main.qml:65
 msgid " days ago."
-msgstr ""
+msgstr " Tagen getroffen."
 
 #: ../qml/Main.qml:65
 msgid "You meet"
-msgstr ""
+msgstr "Sie haben"
 
 #: qmldatefrom.desktop.in.h:1
 msgid "qmldatefrom"
-msgstr ""
+msgstr "qmldatefrom"
