@@ -38,7 +38,7 @@ Page {
        	    Row {
        	    	spacing: 10
        	    	Label {
-       	    		text: qsTr("Insert the name: ")
+       	    		text: i18n.tr("Insert the name: ")
        	    	}
        	    	TextEdit {
        	    		id: name
@@ -48,7 +48,7 @@ Page {
 	    Row {
        		spacing: 10
 	        Label {
-	            text: qsTr("Insert the date")
+	            text: i18n.tr("Insert the date")
 	        }
 	        TextEdit {
 	        	id: date
@@ -56,13 +56,13 @@ Page {
 	        }
 	   }
        	   Button {
-            	text: qsTr("Calculate");
+            	text: i18n.tr("Calculate");
             	onClicked: {
             		var actual = new Date( Qt.formatDate(date.text, "yyyy-MM-dd"));
             		var now= new Date();
             		var data=now-actual.getTime();
             	        data=Math.floor(data / (1000 * 3600 * 24));
-            		result.text=qsTr("You meet")+qsTr(" ")+name.text+qsTr(" about ")+data+ qsTr(" days ago.");
+            		result.text=i18n.tr("You meet")+qsTr(" ")+name.text+i18n.tr(" about ")+data+ i18n.tr(" days ago.");
             	}
     	  }
     	  Label {
