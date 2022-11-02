@@ -2,6 +2,8 @@
 
 A simple app for calculate how many tikme passess from a date
 
+[![OpenStore](https://open-store.io/badges/it.svg)](https://open-store.io/app/qmldatefrom)
+
 ## License
 
 Copyright (C) 2022  Giulio Sorrentino
