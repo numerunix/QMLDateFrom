@@ -23,7 +23,7 @@ import Qt.labs.settings 1.0
 MainView {
     id: root
     objectName: 'mainView'
-    applicationName: 'qmldatefrom.numerone'
+    applicationName: 'qmldatefrom'
     automaticOrientation: true
 
     width: units.gu(45)
@@ -31,8 +31,11 @@ MainView {
 
 Page {
     title: qsTr("QMLDateFrom")
-
-
+    Settings {
+		id: "settings"
+		property string nome: "numerone"
+		property string data: "2022-11-01"
+    }
     Column{
        		spacing: 30
        	    Row {
@@ -42,7 +45,7 @@ Page {
        	    	}
        	    	TextEdit {
        	    		id: name
-       	    		text: qsTr("numerone")
+       	    		text: settings.value("nome", "numerone")
        	    	}
        	    }
 	    Row {
@@ -52,7 +55,7 @@ Page {
 	        }
 	        TextEdit {
 	        	id: date
-	        	text: qsTr("2022-11-01")
+	        	text: settings.value("data", "2022-11-01")
 	        }
 	   }
        	   Button {
@@ -62,7 +65,17 @@ Page {
             		var now= new Date();
             		var data=now-actual.getTime();
             	        data=Math.floor(data / (1000 * 3600 * 24));
-            		result.text=i18n.tr("You meet")+qsTr(" ")+name.text+i18n.tr(" about ")+data+ i18n.tr(" days ago.");
+            	        var anniversary=""
+            	        if (actual.getDate()==now.getDate())
+            	        	if (actual.getMonth()==now.getMonth())
+            	        		anniversary=i18n.tr("Is your anniversary");
+            	        	else
+            	        		anniversary=i18n.tr("Is your mesiversary");
+
+            		result.text=i18n.tr("You meet")+qsTr(" ")+name.text+i18n.tr(" about ")+data+ i18n.tr(" days ago.")+anniversary;
+            		settings.setValue("nome", name.text)
+            		settings.setValue("data", date.text)
+            		settings.sync()
             	}
     	  }
     	  Label {
