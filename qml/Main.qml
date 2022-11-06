@@ -16,6 +16,7 @@
 
 import QtQuick 2.7
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Pickers 1.0
 //import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
@@ -48,20 +49,20 @@ Page {
        	    		text: settings.value("nome", "numerone")
        	    	}
        	    }
-	    Row {
-       		spacing: 10
-	        Label {
-	            text: i18n.tr("Insert the date")
-	        }
-	        TextEdit {
-	        	id: date
-	        	text: settings.value("data", "2022-11-01")
-	        }
-	   }
+  	    	       
+  	    Label {
+	         text: i18n.tr("Insert the date")
+	    }
+            DatePicker {
+        	id: datePicker
+        	date: settings.value("data", "2022-11-01")
+        	minimum: new Date( Qt.formatDate("1980-01-01", "yyyy-MM-dd"))
+        	maximum: new Date()
+    	   }
        	   Button {
             	text: i18n.tr("Calculate");
             	onClicked: {
-            		var actual = new Date( Qt.formatDate(date.text, "yyyy-MM-dd"));
+            		var actual = new Date( Qt.formatDate(datePicker.date, "yyyy-MM-dd"));
             		var now= new Date();
             		var data=now-actual.getTime();
             	        data=Math.floor(data / (1000 * 3600 * 24));
@@ -75,7 +76,7 @@ Page {
             		result.text=i18n.tr("You meet")+qsTr(" ")+name.text+i18n.tr(" about ")+data+ i18n.tr(" days ago.");
             		result1.text=anniversary
             		settings.setValue("nome", name.text)
-            		settings.setValue("data", date.text)
+            		settings.setValue("data", datePicker.date)
             		settings.sync()
             	}
     	  }
