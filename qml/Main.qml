@@ -72,7 +72,8 @@ Page {
             	        	else
             	        		anniversary=i18n.tr("Is your mesiversary");
 
-            		result.text=i18n.tr("You meet")+qsTr(" ")+name.text+i18n.tr(" about ")+data+ i18n.tr(" days ago.")+anniversary;
+            		result.text=i18n.tr("You meet")+qsTr(" ")+name.text+i18n.tr(" about ")+data+ i18n.tr(" days ago.");
+            		result1.text=anniversary
             		settings.setValue("nome", name.text)
             		settings.setValue("data", date.text)
             		settings.sync()
@@ -80,8 +81,22 @@ Page {
     	  }
     	  Label {
     	  	id: result
-    	  	text: qsTr("Fatto dal coglione italo-napoletano");
+    	  	text: qsTr("");
     	  }
+    	  Label {
+    	  	id: result1
+    	  	text: qsTr("")
+    	  }
+    	  Label {
+    	  	text: qsTr("© 2022 Giulio Sorrentino")
+    	  }
+    	  Label {
+    	  	text: qsTr("Sotto licenza GPL v3 o, secondo la tua opinione, qualsiasi\nversione successiva.")
+	  }
+	  Label {
+	  	text: qsTr("Pagina del progetto: https://github.com/numerunix/qmldatefrom")
+	  }
+    	  
    }
  }
 }
