@@ -37,21 +37,28 @@ Page {
 		property string nome: "numerone"
 		property string data: "2022-11-01"
     }
+           Image {
+            anchors.fill: parent
+            source: "../assets/Background.jpg"
+        }
     Column{
        		spacing: 30
        	    Row {
        	    	spacing: 10
        	    	Label {
        	    		text: i18n.tr("Insert the name: ")
+	    	  	color: "white"
        	    	}
        	    	TextEdit {
        	    		id: name
        	    		text: settings.value("nome", "numerone")
+	    	  	color: "white"
        	    	}
        	    }
   	    	       
   	    Label {
 	         text: i18n.tr("Insert the date")
+                 color: "white"
 	    }
             DatePicker {
         	id: datePicker
@@ -83,19 +90,24 @@ Page {
     	  Label {
     	  	id: result
     	  	text: qsTr("");
+    	  	color: "white"
     	  }
     	  Label {
     	  	id: result1
     	  	text: qsTr("")
+    	  	color: "white"
     	  }
     	  Label {
     	  	text: qsTr("© 2022 Giulio Sorrentino")
+    	  	color: "white"
     	  }
     	  Label {
     	  	text: qsTr("Sotto licenza GPL v3 o, secondo la tua opinione, qualsiasi\nversione successiva.")
+    	  	color: "white"
 	  }
 	  Label {
 	  	text: qsTr("Pagina del progetto: https://github.com/numerunix/qmldatefrom")
+    	  	color: "white"
 	  }
     	  
    }
