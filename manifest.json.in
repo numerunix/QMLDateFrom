@@ -1,6 +1,6 @@
 {
-    "name": "qmldatefrom.numerone",
-    "description": "A simple app for calculate how many tikme passess from a date",
+    "name": "qmldatefrom",
+    "description": "A simple date calculator",
     "architecture": "@CLICK_ARCH@",
     "title": "qmldatefrom",
     "hooks": {
@@ -9,7 +9,7 @@
             "desktop":  "qmldatefrom.desktop"
         }
     },
-    "version": "1.0.0",
+    "version": "0.4.2",
     "maintainer": "Giulio Sorrentino <gsorre84@gmail.com>",
     "framework" : "@CLICK_FRAMEWORK@"
 }

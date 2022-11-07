@@ -1,8 +1,6 @@
 # qmldatefrom
 
-A simple app for calculate how many tikme passess from a date
-
-[![OpenStore](https://open-store.io/badges/it.svg)](https://open-store.io/app/qmldatefrom)
+A date calculator
 
 ## License
 
