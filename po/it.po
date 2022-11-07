@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the qmldatefrom.numerone package.
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: qmldatefrom.numerone\n"
+"Project-Id-Version: qmldatefrom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-05 05:19+0000\n"
-"PO-Revision-Date: 2022-11-05 06:29+0100\n"
+"POT-Creation-Date: 2022-11-07 08:17+0000\n"
+"PO-Revision-Date: 2022-11-07 09:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it\n"
@@ -18,38 +18,41 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../qml/Main.qml:44
-msgid "Insert the name: "
-msgstr "Inserisci il nome: "
+#: ../qml/Main.qml:38 qmldatefrom.desktop.in.h:1
+msgid "qmldatefrom"
+msgstr "qmldatefrom"
 
-#: ../qml/Main.qml:54
+#: ../qml/Main.qml:61
+msgid "Insert the name"
+msgstr "Inserisci il nome"
+
+#: ../qml/Main.qml:72
 msgid "Insert the date"
 msgstr "Inserisci la data"
 
-#: ../qml/Main.qml:62
+#: ../qml/Main.qml:82
 msgid "Calculate"
 msgstr "Calcola"
 
-#: ../qml/Main.qml:71
+#: ../qml/Main.qml:91
 msgid "Is your anniversary"
-msgstr "E' il tuo anniversario"
+msgstr "É il tuo anniversario"
 
-#: ../qml/Main.qml:73
+#: ../qml/Main.qml:93
 msgid "Is your mesiversary"
-msgstr "E' il tuo mesiversario"
+msgstr "É il tuo meseversario"
 
-#: ../qml/Main.qml:75
+#: ../qml/Main.qml:95
 msgid " about "
 msgstr " circa "
 
-#: ../qml/Main.qml:75
+#: ../qml/Main.qml:95
 msgid " days ago."
 msgstr " giorni fa."
 
-#: ../qml/Main.qml:75
+#: ../qml/Main.qml:95
 msgid "You meet"
 msgstr "Hai incontrato"
 
-#: qmldatefrom.desktop.in.h:1
-msgid "qmldatefrom"
-msgstr "qmldatefrom"
+#~ msgid "Hello World!"
+#~ msgstr "Ciao Mondo!"
