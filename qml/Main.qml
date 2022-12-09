@@ -112,6 +112,12 @@ MainView {
     	  	text: qsTr('')
         	color: 'white'
     	  }
+    	      	  Label {
+    	        Layout.fillWidth: true
+    	  	id: result1
+    	  	text: qsTr('')
+        	color: 'white'
+    	  }
           Button {
       	    Layout.fillWidth: true
             text: i18n.tr("Informations")
