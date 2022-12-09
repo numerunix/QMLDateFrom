@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qmldatefrom\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-09 15:19+0000\n"
-"PO-Revision-Date: 2022-12-09 16:20+0100\n"
+"PO-Revision-Date: 2022-12-09 17:18+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -40,15 +40,15 @@ msgstr "Ist Ihr Mesiversary"
 
 #: ../qml/Main.qml:102
 msgid " about "
-msgstr " vor ungefähr "
+msgstr " vor etwa "
 
 #: ../qml/Main.qml:102
 msgid " days ago."
-msgstr " days ago."
+msgstr " tagen."
 
 #: ../qml/Main.qml:102
 msgid "You meet"
-msgstr "Sie haben"
+msgstr "Du triffst"
 
 #: ../qml/Main.qml:117 ../qml/Main.qml:125
 msgid "Informations"
