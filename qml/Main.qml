@@ -56,7 +56,7 @@ MainView {
                 bottom: parent.bottom
             }
     	   width: parent.width
-	   height: 2000    	   
+      	   	   height: page1.contentHeight   	   
 
 	RowLayout {
 	            width: parent.width
@@ -143,7 +143,7 @@ MainView {
                 bottom: parent.bottom
             }
       	   width: parent.width
-      	   	   height: 2000    	   
+      	   	   height: page2.contentHeight   	   
 
     	  Label {
     	  	text: qsTr('© 2022 Giulio Sorrentino')
