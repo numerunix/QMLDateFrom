@@ -7,49 +7,53 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmldatefrom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-07 07:58+0000\n"
-"PO-Revision-Date: 2022-11-07 09:38+0100\n"
+"POT-Creation-Date: 2022-12-09 15:19+0000\n"
+"PO-Revision-Date: 2022-12-09 16:23+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: pt\n"
 
-#: ../qml/Main.qml:38 qmldatefrom.desktop.in.h:1
-msgid "qmldatefrom"
-msgstr "qmldatefrom"
-
-#: ../qml/Main.qml:61
+#: ../qml/Main.qml:64
 msgid "Insert the name"
 msgstr "Insira o nome"
 
-#: ../qml/Main.qml:72
+#: ../qml/Main.qml:75
 msgid "Insert the date"
 msgstr "Insira a data"
 
-#: ../qml/Main.qml:82
+#: ../qml/Main.qml:89
 msgid "Calculate"
 msgstr "Calcular"
 
-#: ../qml/Main.qml:91
+#: ../qml/Main.qml:98
 msgid "Is your anniversary"
 msgstr "É o seu aniversário"
 
-#: ../qml/Main.qml:93
+#: ../qml/Main.qml:100
 msgid "Is your mesiversary"
 msgstr "É o seu adversário do mês"
 
-#: ../qml/Main.qml:95
+#: ../qml/Main.qml:102
 msgid " about "
 msgstr " cerca de "
 
-#: ../qml/Main.qml:95
+#: ../qml/Main.qml:102
 msgid " days ago."
 msgstr " dias atrás."
 
-#: ../qml/Main.qml:95
+#: ../qml/Main.qml:102
 msgid "You meet"
 msgstr "Você conheceu"
+
+#: ../qml/Main.qml:117 ../qml/Main.qml:125
+msgid "Informations"
+msgstr "Informações"
+
+#: qmldatefrom.desktop.in.h:1
+msgid "qmldatefrom"
+msgstr "qmldatefrom"

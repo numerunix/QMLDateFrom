@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmldatefrom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-07 08:53+0000\n"
+"POT-Creation-Date: 2022-12-09 15:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,42 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:38 qmldatefrom.desktop.in.h:1
-msgid "qmldatefrom"
-msgstr ""
-
-#: ../qml/Main.qml:61
+#: ../qml/Main.qml:64
 msgid "Insert the name"
 msgstr ""
 
-#: ../qml/Main.qml:70
+#: ../qml/Main.qml:75
 msgid "Insert the date"
 msgstr ""
 
-#: ../qml/Main.qml:81
+#: ../qml/Main.qml:89
 msgid "Calculate"
 msgstr ""
 
-#: ../qml/Main.qml:90
+#: ../qml/Main.qml:98
 msgid "Is your anniversary"
 msgstr ""
 
-#: ../qml/Main.qml:92
+#: ../qml/Main.qml:100
 msgid "Is your mesiversary"
 msgstr ""
 
-#: ../qml/Main.qml:94
+#: ../qml/Main.qml:102
 msgid " about "
 msgstr ""
 
-#: ../qml/Main.qml:94
+#: ../qml/Main.qml:102
 msgid " days ago."
 msgstr ""
 
-#: ../qml/Main.qml:94
+#: ../qml/Main.qml:102
 msgid "You meet"
+msgstr ""
+
+#: ../qml/Main.qml:117 ../qml/Main.qml:125
+msgid "Informations"
+msgstr ""
+
+#: qmldatefrom.desktop.in.h:1
+msgid "qmldatefrom"
 msgstr ""
