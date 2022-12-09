@@ -30,54 +30,62 @@ MainView {
     width: units.gu(45)
     height: units.gu(75)
 
-    Page {
+    AdaptivePageLayout {
         anchors.fill: parent
-
-        header: PageHeader {
-            id: header
-            title: i18n.tr('qmldatefrom')
-        }
-    Settings {
-		id: settings
-		property string nome: 'numerone'
-		property string data: '2022-11-01'
+        primaryPage: page1
+        Page {
+                id: page1
+        	header: PageHeader {
+        	    title: 'qmldatefrom'
+        	}
+            Settings {
+    	id: "settings"
+    	property string data: "2022-12-25"
     }
-
-Rectangle {
-            anchors {
+    Image {
+    	    id: background
+            source: "../assets/Background.jpg"
+            width: parent.width
+            height: parent.height
+    }	
+    ColumnLayout{
+	    anchors {
                 top: header.bottom
                 left: parent.left
                 right: parent.right
                 bottom: parent.bottom
             }
-        Image {
-            anchors.fill: parent
-            source: '../assets/Background.jpg'
-        }
+    	   width: parent.width
+	   height: 2000    	   
 
-	Column {
-		Row {
+	RowLayout {
+	            width: parent.width
 	            Label {
-        	    	text: i18n.tr('Insert the name')+qsTr(':')
+        	    	text: i18n.tr('Insert the name')+':'
         	    	color: 'white'
+        	    	Layout.fillWidth: true
        		     }
 	    	     TextField {
 	    	     	id: name
 			text: settings.value('nome', 'numerone')
+        	    	Layout.fillWidth: true
 		     }
 	      }
 	      Label {
 	         text: i18n.tr('Insert the date')
 	         color: 'white'
+        	    	Layout.fillWidth: true
 	      }
               DatePicker {
         	id: datePicker
         	date: settings.value('data', '2022-11-01')
         	minimum: new Date( Qt.formatDate('1980-01-01', 'yyyy-MM-dd'))
         	maximum: new Date()
+       	    	Layout.fillWidth: true
     	    }
 
 	    Button {
+       	    	Layout.fillWidth: true
             	text: i18n.tr('Calculate');
             	onClicked: {
             		var actual = new Date( Qt.formatDate(datePicker.date, 'yyyy-MM-dd'));
@@ -99,26 +107,53 @@ Rectangle {
             	}
     	  }
     	  Label {
+    	        Layout.fillWidth: true
     	  	id: result
     	  	text: qsTr('')
         	color: 'white'
     	  }
-    	  Label {
-    	  	id: result1
-    	  	text: qsTr('')
-    	  	color: 'white'
-    	  }
+          Button {
+      	    Layout.fillWidth: true
+            text: i18n.tr("Informations")
+            onClicked: page1.pageStack.addPageToCurrentColumn(page1, page2)
+         }
+   }
+  }
+  Page {
+	    id: page2
+            header: PageHeader {
+        	    title: i18n.tr('Informations')
+        }
+    Image {
+            source: "../assets/Background.jpg"
+            width: parent.width
+            height: parent.height
+    }	
+    ColumnLayout {
+	    anchors {
+                top: header.bottom
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
+            }
+      	   width: parent.width
+      	   	   height: 2000    	   
+
     	  Label {
     	  	text: qsTr('© 2022 Giulio Sorrentino')
     	  	color: 'white'
+       	    	Layout.fillWidth: true
+
     	  }
     	  Label {
     	  	text: qsTr('Sotto licenza GPL v3 o, secondo la tua opinione, qualsiasi\nversione successiva.')
     	  	color: 'white'
+       	    	Layout.fillWidth: true
 	  }
 	  Label {
-	  	text: qsTr('Pagina del progdetto: https://github.com/numerunix/qmldatefrom')
+	  	text: qsTr('Pagina del progetto: https://github.com/numerunix/qmldatefrom')
 	  	color: 'white'
+       	    	Layout.fillWidth: true
 	  }
     	  
    }	
