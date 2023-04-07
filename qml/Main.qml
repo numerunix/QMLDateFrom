@@ -49,12 +49,12 @@ MainView {
             height: parent.height
     }	
     ColumnLayout{
-	    anchors {
-                top: header.bottom
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
+   	   	anchors {
+                	top: page1.header.bottom
+                	left: parent.left
+                	right: parent.right
+               	 	bottom: parent.bottom
+            	}
     	   width: parent.width
       	   	   height: page1.contentHeight   	   
 
@@ -92,14 +92,22 @@ MainView {
             		var now= new Date();
             		var data=now-actual.getTime();
             	        data=Math.floor(data / (1000 * 3600 * 24));
+            	        if (data<0) {
+            	        	result.text=i18n.tr('Invalid rvalue');
+            	        	return;
+            	       	}
             	        var anniversary=""
-            	        if (actual.getDate()==now.getDate())
-            	        	if (actual.getMonth()==now.getMonth())
-            	        		anniversary=i18n.tr('Is your anniversary');
-            	        	else
-            	        		anniversary=i18n.tr('Is your mesiversary');
-
-            		result.text=i18n.tr('You meet')+qsTr(' ')+name.text+i18n.tr(' about ')+data+ i18n.tr(' days ago.');
+            	        if (data > 0) {
+ 	           	        if (actual.getDate()==now.getDate())
+        	    	        	if (actual.getMonth()==now.getMonth())
+        	    	        		anniversary=i18n.tr('Is your anniversary');
+        	    	        	else
+        	    	        		anniversary=i18n.tr('Is your mesiversary')
+        	    	};
+			if (name.text==='')
+				result.text=data+i18n.tr(' days have passed')+'.';
+			else
+	            		result.text=i18n.tr('You meet')+qsTr(' ')+name.text+i18n.tr(' about ')+data+ i18n.tr(' days ago.');
             		result1.text=anniversary
             		settings.setValue('nome', name.text)
             		settings.setValue('data', datePicker.date)
@@ -136,14 +144,14 @@ MainView {
             height: parent.height
     }	
     ColumnLayout {
-	    anchors {
-                top: header.bottom
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
+	   anchors {
+           	top: page2.header.bottom
+           	left: parent.left
+           	right: parent.right
+           	bottom: parent.bottom
+           }
       	   width: parent.width
-      	   	   height: page2.contentHeight   	   
+      	   height: page2.contentHeight   	   
 
     	  Label {
     	  	text: qsTr('© 2022 Giulio Sorrentino')
