@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qmldatefrom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-09 15:19+0000\n"
-"PO-Revision-Date: 2022-12-09 16:23+0100\n"
+"POT-Creation-Date: 2023-04-07 06:23+0000\n"
+"PO-Revision-Date: 2023-04-07 08:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: ../qml/Main.qml:64
 msgid "Insert the name"
@@ -30,27 +30,35 @@ msgstr "Inserisci la data"
 msgid "Calculate"
 msgstr "Calcola"
 
-#: ../qml/Main.qml:98
+#: ../qml/Main.qml:96
+msgid "Invalid rvalue"
+msgstr "Valore non valido"
+
+#: ../qml/Main.qml:102
 msgid "Is your anniversary"
 msgstr "É il tuo anniversario"
 
-#: ../qml/Main.qml:100
+#: ../qml/Main.qml:104
 msgid "Is your mesiversary"
 msgstr "É il tuo meseversario"
 
-#: ../qml/Main.qml:102
+#: ../qml/Main.qml:106
+msgid " days have passed"
+msgstr " giorni son passati"
+
+#: ../qml/Main.qml:108
 msgid " about "
 msgstr " circa "
 
-#: ../qml/Main.qml:102
+#: ../qml/Main.qml:108
 msgid " days ago."
 msgstr " giorni fa."
 
-#: ../qml/Main.qml:102
+#: ../qml/Main.qml:108
 msgid "You meet"
 msgstr "Hai incontrato"
 
-#: ../qml/Main.qml:117 ../qml/Main.qml:125
+#: ../qml/Main.qml:129 ../qml/Main.qml:137
 msgid "Informations"
 msgstr "Informazioni"
 
